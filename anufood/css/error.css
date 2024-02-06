@@ -1,0 +1,20 @@
+.back-arrow {
+    width: 40px; /* 버튼 크기 */
+    color: #333; /* 텍스트 색상 */
+    margin-right: 20px; /* 오른쪽 마진 */
+}
+
+.main-content1 img{
+    width: 150px;
+    padding: 20px;
+    margin: 30px 
+    
+}
+
+
+
+.main-content1 h1{
+    text-align: center;
+    color: gray;
+    font-size: larger;
+}

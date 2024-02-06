@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error</title>
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/error.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top_nav"> <!-- 검색창과 메뉴 버튼을 감싸는 새로운 div 추가 -->
+            <a href="#" class="back-arrow"><img src="images/static/back_arrow.svg" alt="뒤로가기" class="back_arrow"></a>
+            <button class="menu-button" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-content1">
+        <img src="images/static/error.svg" alt="로고" class="logo">
+        <h1>검색한 조건에<br> 식당을 찾을 수 없어요 </h1>
+    </div>
+
+
+
+
+    <script>
+    // 사이드 메뉴바 1
+    function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    // document.getElementById("main").style.marginRight = "250px";
+    }
+    // 사이드 메뉴바 2
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    // document.getElementById("main").style.marginRight = "0";
+    }
+    </script>
+
+
+</body>
+</html>
