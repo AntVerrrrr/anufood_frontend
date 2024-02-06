@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>안동대 맛집추천</title>
+<link rel="stylesheet" href="css/Home.css"> <!-- CSS 파일 링크 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+<div class="header">
+  <div class="top_nav"> <!-- 검색창과 메뉴 버튼을 감싸는 새로운 div 추가 -->
+    <input type="text" class="search-bar" placeholder="추가하고 싶은 식당을 검색해보세요">
+    <button class="menu-button" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<div class="main-content1">
+  <h1>[ID]님 <br> <span class="highlight">[MENU]</span>(은)는 <br> 어떠세요?</h1>
+  <br>
+  <a href="selection.html" class="gotoselection_button" id="goToSelection">메뉴 고르러가기</a>    <!--이거 a테크 써야하는지 그냥 버튼해서 script해야하는지 고민이라서 일단 버튼으로 했음-->
+  <div class="images-container">
+    <img src="images/foods/main_rice.png" alt="main_rice" class="main-rice-image" style="width: 120px; height: auto;">
+    <img src="images/foods/main_pig.png" alt="main_pig"  class="main-pig-image" style="width: 250px; height: auto;">
+  </div>
+</div>
+
+<div class="nonbox">
+  <p> </p>
+</div>
+
+<div class="main-content2">
+  <h2>지금 가장 인기있는 메뉴</h2>
+  <div class="cards-container">
+    <div class="card">
+      <div class="card-index">1</div>
+      <div class="card-info">
+        <div class="tags">
+          <span class="log-tag">[loc]</span>
+          <span class="store-tag">[store]</span>
+          <span class="store-tag">[menu]</span>
+        </div>
+        <div class="hashtags">
+          <span class="hashtag">#[St ID]학번</span>
+          <span class="hashtag">#[sex]</span>
+          <span class="hashtag">#[mood]</span>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for other cards -->
+    <div class="card">
+      <div class="card-index">2</div>
+      <div class="card-info">
+        <div class="tags">
+          <span class="log-tag">[loc]</span>
+          <span class="store-tag">[store]</span>
+          <span class="store-tag">[menu]</span>
+        </div>
+        <div class="hashtags">
+          <span class="hashtag">#[St ID]학번</span>
+          <span class="hashtag">#[sex]</span>
+          <span class="hashtag">#[mood]</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-index">3</div>
+      <div class="card-info">
+        <div class="tags">
+          <span class="log-tag">[loc]</span>
+          <span class="store-tag">[store]</span>
+          <span class="store-tag">[menu]</span>
+        </div>
+        <div class="hashtags">
+          <span class="hashtag">#[St ID]학번</span>
+          <span class="hashtag">#[sex]</span>
+          <span class="hashtag">#[mood]</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-index">4</div>
+      <div class="card-info">
+        <div class="tags">
+          <span class="log-tag">[loc]</span>
+          <span class="store-tag">[store]</span>
+          <span class="store-tag">[menu]</span>
+        </div>
+        <div class="hashtags">
+          <span class="hashtag">#[St ID]학번</span>
+          <span class="hashtag">#[sex]</span>
+          <span class="hashtag">#[mood]</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-index">5</div>
+      <div class="card-info">
+        <div class="tags">
+          <span class="log-tag">[loc]</span>
+          <span class="store-tag">[store]</span>
+          <span class="store-tag">[menu]</span>
+        </div>
+        <div class="hashtags">
+          <span class="hashtag">#[St ID]학번</span>
+          <span class="hashtag">#[sex]</span>
+          <span class="hashtag">#[mood]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+$(document).ready(function() {
+  $('.tags li').click(function() {
+    $('.tags li').removeClass('active');
+    $(this).addClass('active');
+    // 여기에 필터링 로직을 추가
+  });
+
+  $('#goToSelection').click(function() {
+    // 여기에 맛집 선택 페이지로 이동하는 코드를 추가
+    alert('맛집 선택 페이지로 이동합니다.');
+  });
+});
+
+// 사이드 메뉴바 1
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  // document.getElementById("main").style.marginRight = "250px";
+}
+// 사이드 메뉴바 2
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  // document.getElementById("main").style.marginRight = "0";
+}
+</script>
+
+</body>
+</html>
